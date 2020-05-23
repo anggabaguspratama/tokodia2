@@ -1,0 +1,475 @@
+body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fff;
+}
+
+/* Login Page */
+#bg img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+}
+#box-login{
+      width: 450px;
+      height: 450px;
+      background-color:transparent;
+      border-radius: 8px;
+      box-shadow: 1px 2px 8px rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+}
+#box-login img{
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -20px);
+}
+#box-login .user-name, .password{
+      position: relative;
+      display: block;
+      width: 350px;
+      height: 45px;
+      margin: 20px auto 0;
+      padding: 0 10px;
+      background-color: #334040;
+      border: 0px;
+      color: #ddd;
+      font-size: 16px;
+      border-radius: 7px;
+}
+#box-login .user-name{ margin-top: 180px;}
+#box-login .login-button{
+      position: relative;
+      display: block;
+      width: 100px;
+      height: 40px;
+      margin: 20px auto 0;
+      background-color: #667070;
+      border: 0px;
+      border-radius: 7px;
+      color: #000;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+}
+#box-login .user-pass-salah{
+      position: absolute;
+      color: #ddd;
+      font-size: 12px;
+      text-align: left;
+      top: 160px;
+      left: 40px;
+}
+/* Tempat menu ====================================================== */
+.container{
+      margin: 0;
+      top: 0;
+      left: 0;
+      display: flex;
+      width: 100%;
+      height: 100vh;
+}
+.container .box-kiri{
+      top: 0;
+      left: 0;
+      position: fixed;
+      width: 300px;
+      height: 100vh;
+      background-color: #0c1414;
+      color: #ddd;
+      z-index: 4;
+}
+#footer img{
+      margin-top: 44%;
+      height: 11%;
+      width: 100%;
+}
+/* ..............................Logo */
+.container .box-kiri .header{
+      display: block;
+      width: 100%;
+      height: 85px;
+      background-color: rgb(35, 97, 117);
+}
+.container .box-kiri .header img{
+      position: absolute;
+      width: 200px;
+      left: 50%;
+      transform: translate(-50%, -30%);
+}
+
+/* ..............................Tulisan Dashboard */
+.bg-dash img{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+}
+.container .box-kiri .box-menu{
+      width: 100%;
+      height: 300px;
+}
+.container .box-kiri .box-menu .head-navbar{
+      position: relative;
+      top: 30px;
+      width: 100%;
+      height: 40px;
+}
+.container .box-kiri .box-menu .head-navbar .fas{
+      position: absolute;
+      margin: 8px 20px;
+      font-size: 24px;
+      color: #ddd;
+}
+.container .box-kiri .box-menu .head-navbar span{
+      position: absolute;
+      margin: 10px 50px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ddd;
+}
+
+/* ..............................navbar */
+.container .box-kiri .box-menu .navbar{
+      position: relative;
+      top: 50px;
+}
+.container .box-kiri .box-menu .navbar a{
+      text-decoration: none;
+      color: #ddd;
+}
+.container .box-kiri .box-menu .navbar div{
+      margin: 5px 0;
+      font-size: 16px;
+      font-weight: bold;
+      /* background-color: #445050; */
+}
+.container .box-kiri .box-menu .navbar li{
+      margin: 2px 50px;
+      font-size: 15px;
+      font-weight: bold;
+      /* background-color: #445050; */
+}
+.container .box-kiri .box-menu .navbar .fas{
+      margin: 8px 0 8px 20px;
+}
+.container .box-kiri .box-menu .navbar span{
+      margin: 0 10px;
+}
+
+.container .box-kiri .box-menu .this-select{
+      background-color: #445050;
+}
+
+/* ..............................logout */
+.container .box-kiri .logout{
+      width: 100%;
+      height: 50px;
+      background-color: #112020;
+      position: absolute;
+      top: 100%;
+      transform: translate(0, -100%);
+}
+.container .box-kiri .logout .fas{
+      position: absolute;
+      font-size: 20px;
+      margin: 15px 20px;
+}
+.container .box-kiri .logout span{
+      position: absolute;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 18px 45px;
+}
+
+
+/* Tempat content ===============================================================*/
+.container .box-content{
+      left: 300px;
+      margin-left: 300px;
+      width: 1066px;
+      height: 100vh;
+}
+.container .box-content .header-content{
+      position: fixed;
+      width: 100%;
+      height: 85px;
+      background-color: rgb(35, 97, 117);
+      text-align: right;
+      z-index: 3;
+}
+.container .box-content .header-content .fas{
+      position: relative;
+      font-size: 30px;
+      color: #ddd;
+      margin: 25px 50px;
+}
+.container .box-content .content{
+      font-size: 30px;
+      margin-top: 85px;
+      color: #334040;
+}
+.container .box-content .content .content-title{
+      position: relative;
+      margin-left: 30px;
+      top: 20px;
+      font-size: 30px;
+      /* background-color: #396675;
+      padding: 5px;
+      color: #fff; */
+}
+
+
+/* Dashboard ===================================================================== */
+.container .box-content .content .sub-title{
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      margin: 0;  
+}
+.container .box-content .content .sub-title{
+      margin-top: 15px;
+      font-size: 32px;
+}
+.container .box-content .content img{
+      width: 550px;
+      position: relative;
+      margin: 30px auto;
+      left: 50%;
+      transform: translate(-50%, 0);
+}
+.container .box-content .content h3{
+      font-size: 18px;
+      margin: -10px 0;
+      text-align: center;
+}
+/* Detail Barang ============================================================== */
+.container .box-content .content .box-button{
+      position: relative;
+      width: 1000px;
+      height: 50px;
+      margin: 10px 30px;
+}
+.container .box-content .content .box-button .barang-masuk-button, .barang-keluar-button, .detail-barang-button{
+      position: relative;
+      width: 150px;
+      height: 30px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #334040;
+      color: #fff;
+      margin-right: 10px;
+      cursor: pointer;
+}
+.container .box-content .content .data-barang{
+      width: 1000px;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      text-align: center;
+}
+.container .box-content .content .data-barang .judul{
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+      background-color: #396675;
+      color: #fff;
+      padding: 5px 10px;
+      width: 165px;
+      border-radius: 7px 7px 0 0;
+}
+.container .box-content .content .data-barang table{
+      border: 0;
+      border-collapse: collapse;
+}
+.container .box-content .content .data-barang table td, th{
+      border: 0;
+      padding: 5px 20px;   
+}
+.container .box-content .content .data-barang table th{
+      background-color: #467D8F;
+      color: #fff;
+}
+.container .box-content .content .data-barang table .text{
+      text-align: left;
+}
+.container .box-content .content .data-barang table .number{
+      text-align: right;
+}
+.container .box-content .content .data-barang table tr:nth-child(odd){
+      background-color: #eee;
+}
+
+
+/* .container .box-content .abc{
+      position: relative;
+      font-size: 30px;
+      color: #000;
+      top: 50%;
+      left: 50%;
+} */
+
+
+/* Barang Masuk ===============================================================*/
+.container .box-content .content form .box-label{
+      display: flex;
+      font-size: 15px;
+      font-weight: bold;
+      margin: 30px 0 0 30px;   
+      width: 800px;
+}
+.container .box-content .content form .box-label .label-form{
+      width: 244px;
+      margin-right: 10px;
+}
+
+.container .box-content .content form .form{
+      margin-left: 30px;   
+      width: 800px;
+      height: 40px;
+      
+}
+.container .box-content .content form .form .nama-barang, .supplier, .jumlah-barang, .surat-masuk, .tgl-pesan, .tgl-barang-masuk, .tgl-barang-keluar{
+      width: 230px;
+      height: 30px;
+      padding-left: 10px;
+      margin-right: 10px;
+      border: 2px solid #333;
+      font-family: Arial, Helvetica, sans-serif;
+}
+.container .box-content .content form .form .nama-barang{
+      width: 244px;
+      height: 36px;
+}
+.container .box-content .content form .form .jumlah-barang{ 
+      /* width: 110px;  */
+      text-align: right;
+}
+.container .box-content .content form .box-button{
+      width: 100px;
+      height: 50px;
+      margin: 0 0 0 717px;
+      padding: 0;
+}
+.container .box-content .content form .box-button .button-plus, .button-min{
+      width: 30px;
+      height: 30px;
+      border: 2px solid #334040;
+      border-radius: 50%;
+      margin-right: 5px;
+      margin-top: 0;
+      cursor: pointer;
+}
+.container .box-content .content form .box-button .button-plus{
+      background-color: #334040;
+      color: #fff;
+}
+.container .box-content .content form .box-button .button-min{
+      background-color: #fff;
+      color: #334040;
+}
+.container .box-content .content form .submit{
+      position: relative;
+      margin-left: 30px;
+      width: 120px;
+      height: 30px;
+      background-color: #334040;
+      border: 0px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #fff;
+}
+
+/* Barang Keluar Page */
+
+/* Notifikasi */
+.content .notifikasi{
+      display: flex;
+      position: absolute;
+      width: 500px;
+      height: 300px;
+      background-color: #396675;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 85%;
+      z-index: 5;
+}
+.content .notifikasi .notif-logo{
+      width: 150px;
+      height: 100%;
+      text-align: center;
+}
+.content .notifikasi .notif-logo .far{
+      font-size: 100px;
+      margin-top: 150px;
+      transform: translate(0, -50px);
+      color: #fff;
+}
+.content .notifikasi .notif-info{
+      width: 350px;
+      height: 100%;
+}
+.content .notifikasi .notif-info .info{
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      display: block;
+      margin-left: 15px;
+}
+.content .notifikasi .notif-info .info:nth-child(1){
+      margin-top: 80px;
+}
+.content .notifikasi .notif-info .info:nth-child(2){
+      margin-bottom: 30px;
+}
+.content .notifikasi .notif-info .barang{
+      margin-left: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+}
+.content .notifikasi .notif-info button{
+      position: relative;
+      margin-left: 100%;
+      margin-top: 60px;
+      transform: translate(-80px, 0); 
+      width: 60px;
+      height: 40px;
+      border: 0;
+      background-color: #fff;
+      border-radius: 10px;
+      color: #396675;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+}
+.content .notifikasi .notif{
+      width: 100%;
+      height: 30px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      margin-top: 120px;
+}
+.content .notifikasi button{
+      position: absolute;
+      width: 50px;
+      height: 30px;
+      background-color: #295665;
+      border: 0px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      top: 100%;
+      left: 100%;
+      transform: translate(-70px, -50px);
+}
